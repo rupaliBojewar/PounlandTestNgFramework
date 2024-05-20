@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="url" value="https://www.poundland.co.uk/"></parameter>
+    <test verbose="2" preserve-order="true"
+          name="D:/Software Testing/SdetAutomationFramework/src/test/java/com/sdet/tests">
+        <classes>
+            <class name="com.sdet.tests.VerifyCart">
+                <methods>
+                    <include name="verifyCartItems"/>
+                </methods>
+            </class>
+            <class name="com.sdet.tests.VerifyWishlist">
+                <methods>
+                    <include name="verifyWishlist"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
