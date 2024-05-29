@@ -76,6 +76,8 @@ public class MainPage {
         return itemToSelect;
     }
 
+
+
     public List<String> readItemsFromExcel(String sheetName) throws IOException {
         File file = new File(System.getProperty("user.dir") + "/itemList.xlsx");
         FileInputStream fileInputStream = new FileInputStream(file);

@@ -52,7 +52,8 @@ public class HomePage {
 
     public void signInAccount() {
         //driver.navigate().refresh();
-        seleniumActions.clickOnElement(acceptCookiesBtn);
+        if(acceptCookiesBtn.isDisplayed())
+        {seleniumActions.clickOnElement(acceptCookiesBtn);}
         seleniumActions.waitForElementAndClick(signInField);
         seleniumActions.waitForElementAndSenKeys(emailIdInputField, "Test@yopmail.com");
         seleniumActions.waitForElementAndSenKeys(passwordInputField, "Test@1234");
