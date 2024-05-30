@@ -1,0 +1,1 @@
+{"uuid":"e9d1944e-7b60-4e26-a915-c28d8842385f","name":"com.sdet.tests.VerifyCart","children":["60b10e5d-5e92-46df-9ac8-81ec6944e973"],"befores":[{"name":"initialize","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1716968494242,"stop":1716968496902}],"afters":[],"start":1716968492002,"stop":1716968545740}

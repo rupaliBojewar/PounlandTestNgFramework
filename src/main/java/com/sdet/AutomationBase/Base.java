@@ -32,6 +32,13 @@ public class Base {
 //        driver = webDriverFactory.launchDriver("chrome");
 //    }
 
+//    @BeforeTest
+//    public void launchDriver(){
+//        webDriverFactory = new WebDriverFactory(driver);
+//        driver = webDriverFactory.launchDriver("chrome");
+//        driver.get("https://www.poundland.co.uk/");
+//    }
+
     @BeforeClass
     //Initialize the drivers
     public void initialize() {
@@ -81,7 +88,10 @@ public class Base {
     @AfterClass
     //quit the driver
     public void afterSuite() {
-        if (driver != null)
-        {driver.quit();}
+
+        driver.quit();
+
+//        if (driver != null)
+//        {driver.quit();}
     }
 }
